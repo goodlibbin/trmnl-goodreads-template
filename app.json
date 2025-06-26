@@ -1,0 +1,19 @@
+{
+  "name": "TRMNL Goodreads Display",
+  "description": "Display your Goodreads reading progress on TRMNL e-ink devices",
+  "repository": "https://github.com/goodlibbin/trmnl-goodreads-template",
+  "logo": "https://usetrmnl.com/favicon.ico",
+  "keywords": ["flask", "goodreads", "trmnl", "e-ink", "reading", "books"],
+  "env": {},
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
