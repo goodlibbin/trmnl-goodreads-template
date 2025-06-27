@@ -693,12 +693,28 @@ def clear_cache():
         "timestamp": datetime.now().isoformat()
     })
 
+@app.route("/test-data")
+def test_data():
+    """Test endpoint with sample data for demonstration"""
+    return jsonify({
+        "title": "The Seven Husbands of Evelyn Hugo",
+        "author": "Taylor Jenkins Reid",
+        "progress": 68,
+        "start_date": "Jun 15, 2025",
+        "update_date": "Jun 26, 2025",
+        "challenge": "15 of 25 books",
+        "challenge_progress_percent": 60,
+        "entries_count": 3,
+        "current_time": datetime.now().strftime('%m/%d %H:%M')
+    })
+
 if __name__ == "__main__":
     print("🚀 Starting TRMNL Goodreads Data Server")
     print("=" * 60)
     print("📚 TRMNL Goodreads Reading Progress Data API")
     print("🔧 Configure your RSS URL in the USER CONFIGURATION section")
     print("📡 Main endpoint: /trmnl-data (JSON data for TRMNL templates)")
+    print("🧪 Test endpoint: /test-data (sample data for testing)")
     print("🐛 Debug endpoints: /debug, /debug-entries, /test-challenge")
     print("💾 Clear cache: /clear-cache")
     print("=" * 60)
@@ -706,6 +722,7 @@ if __name__ == "__main__":
     if GOODREADS_RSS_URL == "https://www.goodreads.com/user/updates_rss/YOUR_USER_ID?key=YOUR_RSS_KEY":
         print("⚠️  WARNING: Please update GOODREADS_RSS_URL with your actual RSS feed URL")
         print("   Find your RSS URL at: https://www.goodreads.com/user/show/YOUR_ID")
+        print("🧪 For testing, visit: /test-data to see sample output")
     else:
         print("✅ Configuration looks good! RSS URL is set.")
     
