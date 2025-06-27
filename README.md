@@ -17,7 +17,7 @@ A Flask data backend for displaying your current Goodreads reading progress on T
 ## 🚀 Quick Deploy
 
 ### Deploy to Railway (Recommended)
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/goodlibbin/trmnl-goodreads-template)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/evQIi3?referralCode=9288Uc)
 
 ### Deploy to Heroku
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/goodlibbin/trmnl-goodreads-template)
