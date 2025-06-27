@@ -3,7 +3,6 @@
 A Flask data backend for displaying your current Goodreads reading progress on TRMNL e-ink devices. Provides clean JSON data that works with TRMNL's template system to show book title, author, progress bars, and reading challenge tracking.
 
 ![TRMNL Goodreads Display MockUp](https://github.com/goodlibbin/trmnl-goodreads-template/blob/main/mock.jpg)
-![TRMNL Goodreads Display Example](https://github.com/goodlibbin/trmnl-goodreads-template/blob/main/example.jpg)
 
 ## ✨ Features
 
@@ -255,6 +254,8 @@ To update your deployment with the latest features:
 4. Redeploy your app
 
 ## 📊 How It Works
+
+![TRMNL Goodreads Display Example](https://github.com/goodlibbin/trmnl-goodreads-template/blob/main/example.jpg)
 
 1. **RSS Parsing**: Fetches your Goodreads RSS feed every 5 minutes
 2. **Data Fusion**: Intelligently combines multiple entries for the same book
