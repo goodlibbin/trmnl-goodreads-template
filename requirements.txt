@@ -1,7 +1,4 @@
-# Updated: Force rebuild
 Flask==3.0.0
-flask-caching==2.1.0
-flask-limiter==3.5.0
 requests==2.31.0
 beautifulsoup4==4.12.2
 feedparser==6.0.10
