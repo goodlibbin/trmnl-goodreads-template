@@ -431,11 +431,11 @@ def clear_cache():
 
 if __name__ == "__main__":
     print("🚀 Starting TRMNL Goodreads Recipe Server")
-    print("📚 Visit http://localhost:5000 to see the home page")
+    print("📚 Visit http://localhost:5001 to see the home page")
     print("📊 API endpoint: /trmnl-data?rss_url=YOUR_GOODREADS_RSS_URL")
     print("🧪 Demo mode: /trmnl-data?demo=true")
     print("💓 Health check: /health")
     print("🗑️  Clear cache: /clear-cache")
     
-    port = int(os.environ.get("PORT", 5000))
+    port = int(os.environ.get("PORT", 5001))
     app.run(host="0.0.0.0", port=port, debug=False)
